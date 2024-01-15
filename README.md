@@ -9,16 +9,16 @@
    - Nói chung, HTTP là giao thức cơ bản và quan trọng trong việc truyền tải thông tin qua Internet.
 2. SSR & CSR
    - SSR (Server-Side Rendering) :
-    + Quá trình render HTML và JavaScript diễn ra ở phía máy chủ (server).
-    + Khi một yêu cầu được gửi từ trình duyệt của người dùng, máy chủ tạo ra một phiên bản hoàn chỉnh của trang web và gửi nó về cho trình duyệt.
-    + Ưu điểm :
-       Request nhanh
-    + Nhược điểm :
-       Thao tác sẽ bị reload trang
-   - CSR (Client-Side Rendering) :
-    + Trình duyệt của người dùng phải thực hiện quá trình render HTML và JavaScript.
-    + Khi người dùng truy cập một trang web, máy chủ chỉ cần gửi một trang HTML cơ bản và một số tập tin JavaScript. Và trình duyệt sẽ đọc têp JS này để render dữ liệu.
-    + Ưu điểm :
-        Thao tác không bị reload trang ( trải nghiệm smooth hơn )
-    + Nhược điểm :
-        Request lần đầu chậm
+       + Quá trình render HTML và JavaScript diễn ra ở phía máy chủ (server).
+       + Khi một yêu cầu được gửi từ trình duyệt của người dùng, máy chủ tạo ra một phiên bản hoàn chỉnh của trang web và gửi nó về cho trình duyệt.
+       + Ưu điểm :
+          Request nhanh
+       + Nhược điểm :
+          Thao tác sẽ bị reload trang
+    - CSR (Client-Side Rendering) :
+       + Trình duyệt của người dùng phải thực hiện quá trình render HTML và JavaScript.
+       + Khi người dùng truy cập một trang web, máy chủ chỉ cần gửi một trang HTML cơ bản và một số tập tin JavaScript. Và trình duyệt sẽ đọc têp JS này để render dữ liệu.
+       + Ưu điểm :
+           Thao tác không bị reload trang ( trải nghiệm smooth hơn )
+       + Nhược điểm :
+           Request lần đầu chậm
