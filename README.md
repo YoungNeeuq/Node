@@ -22,3 +22,37 @@
           + Thao tác không bị reload trang ( trải nghiệm smooth hơn )
        - Nhược điểm :
           + Request lần đầu chậm
+#SQL : Các lệnh cơ bản
+
+   1.SELECT - Truy vấn dữ liệu:
+      a.Hiển thị tất cả dữ liệu từ một bảng:
+         SELECT * FROM ten_bang;
+      b.Hiển thị một số cột cụ thể từ một bảng:
+         SELECT column1, column2 FROM ten_bang;
+      c.Sử dụng điều kiện WHERE để lọc dữ liệu:
+         SELECT * FROM ten_bang WHERE dieu_kien;
+   
+   2.INSERT - Thêm dữ liệu mới:
+      INSERT INTO ten_bang (column1, column2) VALUES (gia_tri1, gia_tri2);
+   
+   3.UPDATE - Cập nhật dữ liệu:
+      UPDATE ten_bang SET column1 = gia_tri_moi WHERE dieu_kien;
+   
+   4.DELETE - Xóa dữ liệu:
+      DELETE FROM ten_bang WHERE dieu_kien;
+   
+   5.CREATE TABLE - Tạo bảng mới:
+      CREATE TABLE ten_bang (
+          column1 datatype,
+          column2 datatype,
+          ...
+      );
+   
+   6.ALTER TABLE - Thay đổi cấu trúc bảng:
+      a.Thêm cột mới:
+         ALTER TABLE ten_bang ADD COLUMN ten_cot datatype;
+      b.Đổi tên cột:
+         ALTER TABLE ten_bang RENAME COLUMN cu_ten TO moi_ten;
+   
+   7.DROP TABLE - Xóa bảng:
+      DROP TABLE ten_bang;
