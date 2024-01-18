@@ -22,6 +22,16 @@
           + Thao tác không bị reload trang ( trải nghiệm smooth hơn )
        - Nhược điểm :
           + Request lần đầu chậm
+3. express-handlebars là một thư viện hỗ trợ template engine cho Express.js, một framework web phổ biến cho Node.js. Template engine giúp bạn xây dựng và tái sử dụng các giao diện người dùng (views) trong ứng dụng web của mình.
+4. Query parameters là một phần của URL mà bạn có thể sử dụng để truyền dữ liệu từ client (trình duyệt hoặc ứng dụng) đến server trong quá trình thực hiện HTTP request. Query parameters thường xuất hiện sau ký tự ? trong URL và được tách nhau bằng dấu &. Ví dụ về một URL với query parameters:       https://example.com/search?q=nodejs&page=1&sort=asc
+5. Mô hình MVC (Model-View-Controller) là một kiến trúc thiết kế phổ biến được sử dụng trong phát triển phần mềm để tách biệt các thành phần khác nhau của ứng dụng và tạo ra một cấu trúc dễ quản lý.
+  a. Model: Là phần của ứng dụng chịu trách nhiệm cho việc tương tác với cơ sở dữ liệu, xử lý logic kinh doanh và cung cấp dữ liệu cho Controller.
+
+  b.View: Là phần của ứng dụng chịu trách nhiệm hiển thị dữ liệu cho người dùng. Trong ứng dụng web, nó có thể là các template engine như Handlebars, EJS, hoặc React.
+
+  c.Controller: Là phần của ứng dụng chịu trách nhiệm nhận yêu cầu từ người dùng thông qua routes, tương tác với Model để lấy dữ liệu và sau đó chuyển dữ liệu đó đến View để hiển thị. Express.js routes và middleware thường đóng vai trò như Controller trong mô hình MVC.
+
+  
 #SQL : Các lệnh cơ bản
 
    1.SELECT - Truy vấn dữ liệu:
