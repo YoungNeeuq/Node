@@ -4,6 +4,11 @@ const app = express()
 const handlebars = require('express-handlebars')
 const port = 3000
 const router = require('./routers')
+const db = require('./config/db')
+
+//Connect DB
+db.connect()
+
 
 app.use(express.static(path.join(__dirname,'public')))
 app.use(express.urlencoded());
@@ -18,6 +23,8 @@ console.log(path.join(__dirname, 'resources/views'))
 
 
 router(app)
+
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
